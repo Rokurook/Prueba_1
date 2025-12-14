@@ -1,0 +1,112 @@
+
+.titulo-libreria {
+    font-size: 32px;
+    font-weight: bold;
+    color: #f0f1f5;
+    text-align: center;
+}
+
+
+
+ion-content {
+    --background: none;
+    /* Elimina cualquier fondo global */
+    background-image: url('../../../assets/img/fondo.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo{
+    width: 150px; /* tamaño de la imagen */
+    height: auto;
+    animation: zoomIn 3s ease-in-out infinite alternate;/*animacion de 3s adentro a fuera, infinito y alternado*/
+}
+
+/*animación de zoom suave*/
+@keyframes zoomIn {
+    0%{
+        transform: scale(1); /*Tamaño original */
+    }
+    100%{
+        transform: scale(0.5); /*Zoom leve*/
+    }
+}
+
+
+ion-card {
+ background: #cd90c6;
+ border-radius: 10px;
+ box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+ion-card-heder {
+ text-align:center;
+}
+
+ion-item {
+    --background: transparent;
+}
+
+ion-input {
+    --padding-star: 10px;
+}
+
+ion-button.login-button {
+    --background: #007bff;
+    --color: #fff;
+    --border-radius: 20px;
+    --box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+    margin-top:1rem;
+}
+
+ion-button.register-button {
+    --background: transparent;/* Fondo transparente */
+    --color: #fff;/* Texto blanco */
+    --border-radius: 20px;
+    --box-shadow: none; /* Sin sombra */
+    --border: 1px solid #fff;/* Borde blanco para visibilidad */
+    margin-top: 1rem;
+}
+
+
+ion-button:hover {
+ --background: #0056b3;
+}
+
+.forgot-password {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+a {
+        color: rgb(0, 1, 1);
+        text-decoration: none;
+     }
+
+}
+
+.forgot-link {
+    color: var(--ion-color-medium);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+
+
+.logo2-container {
+    display: flex;
+    justify-content: flex-start;
+    margin:60px; /* Separa del texto anterior */
+    margin-bottom: 50px;
+}
+
+logo2-container img {
+    width:10px; /*tamaño imagen */
+    height: auto; /* Mantiene proporción */
+}

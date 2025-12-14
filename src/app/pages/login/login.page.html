@@ -1,0 +1,50 @@
+<ion-content [fullscreen]="true">
+
+  <!-- Imagen del logo -->
+  <div class="logo-container">
+    <img src="../../../assets/img/libreria.png" alt="Logo" class="logo">
+  </div>
+
+  <ion-card>
+
+    <ion-card-title class="titulo-libreria">Mi Librería App</ion-card-title>
+
+    <ion-card-content>
+
+      <!-- Campo de email -->
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input [(ngModel)]="email" type="text"></ion-input>
+      </ion-item>
+
+      <!-- Campo contraseña -->
+      <ion-item>
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input [(ngModel)]="password" type="password"></ion-input>
+      </ion-item>
+
+      <!-- Botón Login -->
+      <ion-button expand="block" (click)="login()" class="login-button">
+        Ingreso
+      </ion-button>
+
+      <!-- Botón Registro (corregido para usar CrearCuenta) -->
+      <ion-button expand="block" (click)="CrearCuenta()" fill="clear" class="register-button">
+        Registro
+      </ion-button>
+
+    </ion-card-content>
+
+    <!-- Olvidó contraseña -->
+    <ion-text class="forgot-password" color="medium">
+      <a href="#" class="forgot-link">¿Olvidaste tu contraseña?</a>
+    </ion-text>
+
+  </ion-card>
+
+  <!-- Logo inferior -->
+  <div class="logo-container">
+    <img src="../../assets/img/logo2.png" alt="Logo" class="logo2">
+  </div>
+
+</ion-content>

@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Pagar Producto</ion-title>
+    <ion-buttons slot="end">
+      <ion-menu-button menu="mainMenu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content class="pago-content">
+
+  <form [formGroup]="pagoForm" (ngSubmit)="realizarPago()">
+
+    <div class="user-info">
+      <img src="../../assets/img/pago.png" alt="User Avatar" class="user-avatar" />
+    </div>
+
+
+
+    <!-- Medio de pago -->
+    <ion-item>
+      <ion-label>Método de pago</ion-label>
+      <ion-select formControlName="metodoPago" placeholder="Seleccione">
+        <ion-select-option value="tarjeta">Tarjeta</ion-select-option>
+        <ion-select-option value="debito">Débito</ion-select-option>
+        <ion-select-option value="transferencia">Transferencia</ion-select-option>
+        <ion-select-option value="paypal">PayPal</ion-select-option>
+        <ion-select-option value="otro">Otro</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <!-- Monto -->
+    <ion-item>
+      <ion-label position="stacked">Monto a pagar</ion-label>
+      <ion-input type="number" formControlName="monto" placeholder="Ingrese el valor"></ion-input>
+    </ion-item>
+
+    <!-- Botón -->
+    <ion-button expand="block" type="submit" [disabled]="pagoForm.invalid" class="btn-pago">
+      Realizar Pago
+    </ion-button>
+
+  </form>
+
+</ion-content>

@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+
+  <div class="title_tab">
+    <h2>Productos</h2>
+  </div>
+
+  <ion-list class="transparent-list">
+    <ion-item *ngFor="let producto of productos">
+      <ion-label>
+        <h2>{{ producto.nombre }}</h2>
+        <h3>{{ producto.autor }}</h3>
+        <h4>{{ producto.descripcion }}</h4>
+        <h5>{{ producto.categoria }}</h5>
+        <p>Precio por unidad: {{ producto.precio | convertirMoneda:950 }}</p>
+      </ion-label>
+      <div class="content_img">
+        <img [src]="producto.imagen" alt="{{ producto.nombre }}" class="product-image" />
+      </div>
+
+    </ion-item>
+  </ion-list>
+

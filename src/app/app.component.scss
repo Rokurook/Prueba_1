@@ -1,0 +1,41 @@
+ion-list {
+    --background: transparent; /* Fondo transparente para el listado */
+    background-color: transparent;
+}
+
+ion-item {
+    --background: transparent; /* Fondo transparente para cada ítem */
+    background-color: transparent;
+}
+
+ion-item ion-icon {
+    color: #110202;
+}
+
+ion-header,
+ion-toolbar {
+    color: white;
+}
+
+ion-item {
+    --background: #f8f4ef;
+    --color: #4a3f35;
+    border-radius: 10px;
+    margin: 8px 12px;
+    transition: 0.3s;
+}
+
+ion-item:hover {
+    --background: #e9dfd3; /* Color al pasar el mouse */
+    transform: scale(1.02);/* Pequeño zoom al hacer hover */
+}
+
+ion-icon {
+    color: #7a5c43;/* Color del ícono */
+    font-size: 1.4em;/* Tamaño del ícono */
+}
+
+ion-label {
+    font-weight: bold;
+    /* Texto más destacado */
+}

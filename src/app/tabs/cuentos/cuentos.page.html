@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div class="title_tab">
+    <h2>Cuentos</h2>
+  </div>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let cuento of cuentos" class="single-line-item">
+      <!-- Texto (nombre + descripción) -->
+      <div class="item-text">
+        <span class="nombre">{{ cuento.nombre }}</span>
+        <span class="descripcion">{{ cuento.descripcion }}</span>
+      </div>
+
+      <!-- Imagen al final en la misma línea -->
+      <img slot="end" class="cuento-img" [src]="cuento.imagen" alt="{{ cuento.nombre }}" />
+    </ion-item>
+  </ion-list>
+</ion-content>

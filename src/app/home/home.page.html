@@ -1,0 +1,65 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <!-- <app-company-name [companyName]="'Mi Librería App'"></app-company-name> -->
+    <ion-buttons slot="start">
+    <ion-back-button defaultHref="/login"></ion-back-button>
+    </ion-buttons>
+
+
+    <!-- Botón de menú alineado a la derecha -->
+    <ion-buttons slot="end">
+      <ion-menu-button menu="mainMenu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content [fullscreen]="true">
+
+<!-- Imagen de usuario y mensaje de bienvenida -->
+<div class="user-info">
+  <img src="../../assets/img/usuario.png" alt="User Avatar" class="user-avatar" />
+  <h2><strong>{{ bienvenidos }}</strong><br /> {{ email }}</h2>
+
+</div>
+
+<h2>¡Libros y sagas disponibles!</h2>
+
+<!--libros / sagas-->
+<ion-card>
+  <img src="../assets/img/saga1.jpg" alt="saga" />
+  <ion-card-header>
+    <ion-card-title>Harry Potter</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    Harry Potter es una saga escrita por J.K. Rowling que sigue la vida de un niño huérfano que descubre que es un mago. A
+    los 11 años recibe una carta para estudiar en el Colegio Hogwarts de Magia y Hechicería, donde hace amigos como Ron
+    Weasley y Hermione Granger.
+  </ion-card-content>
+</ion-card>
+
+<ion-card>
+  <img src="../assets/img/saga2.png" alt="saga" />
+  <ion-card-header>
+    <ion-card-title>Libros varios</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    Después de sobrevivir al tren Blaine el Mono, Roland Deschain y su grupo (Eddie, Susannah, Jake y Oy) continúan su viaje
+    hacia la Torre Oscura. Durante una pausa en el camino, Roland les cuenta la historia de su juventud en Mejís, donde
+    conoció a Susan Delgado, su primer y gran amor.
+  </ion-card-content>
+</ion-card>
+
+<ion-card>
+  <img src="../assets/img/saga3.jpg" alt="saga" />
+  <ion-card-header>
+    <ion-card-title>Juegos del hambre</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    Los Juegos del Hambre, escrita por Suzanne Collins, cuenta la historia de Katniss Everdeen, una chica del Distrito 12
+    que vive en un país llamado Panem, gobernado por un régimen opresivo.
+  </ion-card-content>
+</ion-card>
+
+</ion-content>

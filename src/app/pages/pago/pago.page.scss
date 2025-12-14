@@ -1,0 +1,90 @@
+ion-content {
+    --background: #F2E3D5;
+    /* Beige suave */
+}
+
+.form-container {
+    background: #080707;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin: 20px;
+}
+
+/* Título del formulario */
+
+
+/* Inputs */
+ion-item {
+    --background: transparent;
+    --border-radius: 14px;
+    --border-width: 1px;
+    --border-color: #2b1779;
+    /* Morado claro */
+    margin-bottom: 12px;
+}
+
+/* Etiquetas */
+ion-label {
+    color: #0f0101;
+}
+
+/* Botón principal */
+ion-button {
+    --background: #5A1E7A;
+    --background-hover: #7A3CA3;
+    --border-radius: 14px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.item {
+    color: #0f0101;
+    font-weight: bold;
+}
+
+.btn-pago {
+    --background: #7a3ea1;
+    /* morado suave */
+    --background-hover: #692f8f;
+    --color: #ffffff;
+    width: 100%;
+    border-radius: 12px;
+    font-weight: bold;
+    padding: 12px;
+    margin-top: 20px;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+        filter: brightness(1.1);
+    }
+
+    &:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
+}
+
+.user-info {
+    display: flex;
+    justify-content: center;
+    /* Centra horizontal */
+    margin-top: 15px;
+    margin-bottom: 20px;
+    /* Espacio debajo de la imagen */
+}
+
+.user-avatar {
+    width: 250px;
+    /* Ajusta el tamaño según tu diseño */
+    height: auto;
+    border-radius: 12px;
+    /* Opcional: bordes suaves */
+    display: block;
+}
+
+form ion-label {
+    font-weight: bold;
+    color: #080708;
+    font-size: 20px;
+}

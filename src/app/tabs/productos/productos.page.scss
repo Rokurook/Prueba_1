@@ -1,0 +1,105 @@
+
+/* Título principal */
+.title_tab h2 {
+    text-align: center;
+    color: #3b0066;
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-top: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Lista transparente */
+.transparent-list {
+    background: transparent;
+    padding: 0;
+}
+
+/* Cada producto (ion-item) como tarjeta */
+ion-item {
+    --background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    margin: 15px 10px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+ion-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+/* Etiquetas dentro del ion-label */
+ion-label h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #2d004d;
+    margin-bottom: 5px;
+}
+
+ion-label h3 {
+    font-size: 1rem;
+    color: #5a347a;
+    margin-bottom: 8px;
+    font-style: italic;
+}
+
+ion-label h4 {
+    font-size: 0.95rem;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+ion-label h5 {
+    font-size: 0.9rem;
+    color: #6a0099;
+    margin-bottom: 6px;
+}
+
+ion-label p {
+    font-size: 0.9rem;
+    color: #000;
+    font-weight: 500;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 8px;
+    padding: 5px 8px;
+    display: inline-block;
+}
+
+/* Imagen del producto */
+.content_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    height: 110px;
+    margin-left: 10px;
+}
+
+.product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.product-image:hover {
+    transform: scale(1.05);
+}
+
+ion-header::after,
+ion-toolbar::after {
+    background: none !important;
+    display: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    content: none !important;
+}
+ion-menu-button {
+    --color: #000000 !important;
+}
